@@ -132,7 +132,6 @@ module.exports = {
             template: 'src/html-pages/3_11_jumbotron.html',
             chunks: ['app']
         }),
-/*
         new HtmlWebpackPlugin({
             filename: '4_2_grid_system.html',
             template: 'src/html-pages/4_2_grid_system.html',
@@ -153,6 +152,7 @@ module.exports = {
             template: 'src/html-pages/4_5_auto_margins_wrapping_order.html',
             chunks: ['app']
         }),
+/*
         new HtmlWebpackPlugin({
             filename: '5_2_carousel.html',
             template: 'src/html-pages/5_2_carousel.html',
