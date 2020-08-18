@@ -181,7 +181,7 @@ module.exports = {
             filename: '5_7_scrollspy.html',
             template: 'src/html-pages/5_7_scrollspy.html',
             chunks: ['app']
-        })
+        }),
         new webpack.HotModuleReplacementPlugin()
 	]
 };
