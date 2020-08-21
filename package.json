@@ -1,0 +1,31 @@
+{
+  "name": "project1-looplab",
+  "version": "1.0.0",
+  "description": "Practicing working with Git and GitHub while learning Bootstrap 4 Setting up Project 1 Branch Project #1 LoopLab",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --open",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trevormundt/bootstrap4.git"
+  },
+  "keywords": [
+    "Bootstrap v4.5",
+    "Project #1"
+  ],
+  "author": "Trevor Mundt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trevormundt/bootstrap4/issues"
+  },
+  "homepage": "https://github.com/trevormundt/bootstrap4#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^4.3.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
