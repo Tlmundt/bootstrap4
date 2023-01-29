@@ -7,31 +7,26 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
     mode: 'development',
     entry: {
-        app: './src/index.js'
+        bundle: path.resolve(__dirname, 'src/index.js')
     },
     output: {
+        path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
-        path: path.resolve(__dirname, 'dist')
+        clean: true,
     },
+    watchOptions: {
+        ignored: /node_modules/,
+      },
     devServer: {
-		watchContentBase: true,
-		watchOptions: {
-            ignored: /node_modules/
+		static: {
+            directory: path.resolve(__dirname, 'dist'),
         },
-	    compress: true,
-	    stats: {
-		    all: false,
-		    colors: true,
-		    errors: true,
-		    warnings: true,
-		    errorDetails: true
-	    },
-	    inline: true,
-	    hot: true,
-	    host: '0.0.0.0',
-	    port: 8080,
-	    disableHostCheck: true,
-	    useLocalIp: true
+        watchFiles: ["src/*.html"],
+        open: true,
+        hot: true,
+        liveReload: true,
+        compress: true,
+        historyApiFallback: true,
 	},
 	module: {
     	rules: [
@@ -53,6 +48,5 @@ module.exports = {
             template: 'src/index.html',
         }),
         new CleanWebpackPlugin(),
-        new webpack.HotModuleReplacementPlugin()
 	]
 };
