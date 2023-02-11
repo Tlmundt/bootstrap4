@@ -13,6 +13,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
         clean: true,
+        assetModuleFilename: "img/[name][ext]",
     },
     watchOptions: {
         ignored: /node_modules/,
@@ -33,7 +34,15 @@ module.exports = {
         	{
             	test: /\.css$/,
             	use: [MiniCssExtractPlugin.loader, 'css-loader']
-        	}
+        	},
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
+            },
+            {
+                test: /\.html$/i,
+                use: 'html-loader'
+            }
     	]
 	},
 	optimization: {
