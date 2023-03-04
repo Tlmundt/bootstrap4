@@ -1,0 +1,36 @@
+{
+  "name": "project2-mizuxe",
+  "version": "1.0.0",
+  "description": "Bootstrap 4 Project 2: Mixune with SCSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "webpack serve",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trevormundt/bootstrap4.git"
+  },
+  "keywords": [
+    "Webpack",
+    "SASS",
+    "Bootstrap v4.5",
+    "Project #2"
+  ],
+  "author": "Trevor Mundt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trevormundt/bootstrap4/issues"
+  },
+  "homepage": "https://github.com/trevormundt/bootstrap4#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.3",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.2",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
