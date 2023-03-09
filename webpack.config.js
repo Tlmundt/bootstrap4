@@ -27,8 +27,8 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.css$/,
-                use: [MiniCssExtractPlugin.loader, 'css-loader']
+                test: /\.s[ac]ss$/i,
+                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
             },
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
@@ -46,7 +46,8 @@ module.exports = {
             template: 'src/index.html'
         }),
         new MiniCssExtractPlugin({
-            filename: 'styles.css'
+            filename: 'css/[name].css',
+            chunkFilename: '[id].css'
         })
     ]
 };
