@@ -6,11 +6,10 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
     mode: 'development',
     entry: {
-        bundle: path.resolve(__dirname, 'src/index.js')
+        bundle: path.resolve(__dirname, 'src/index.js'),
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js',
         clean: true,
         assetModuleFilename: 'img/[name][ext]',
     },
@@ -47,7 +46,6 @@ module.exports = {
         }),
         new MiniCssExtractPlugin({
             filename: 'css/[name].css',
-            chunkFilename: '[id].css'
         })
     ]
 };
