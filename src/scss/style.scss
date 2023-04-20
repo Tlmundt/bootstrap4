@@ -1,4 +1,22 @@
 $primary: #3292a6;
 $primary-overlay: rgba(50,146,166, 0.8);
 
+body {
+    background-color: $primary;
+}
 
+.carousel-item {
+    height: 450px;
+}
+.carousel-image-1 {
+    background: url("../img/image1.jpg");
+    background-size: cover;
+}
+.carousel-image-2 {
+    background: url("../img/image2.jpg");
+    background-size: cover;
+}
+.carousel-image-3 {
+    background: url("../img/image3.jpg");
+    background-size: cover;
+}
