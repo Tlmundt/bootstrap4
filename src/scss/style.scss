@@ -1,10 +1,3 @@
-$primary: #3292a6;
-$primary-overlay: rgba(50,146,166, 0.8);
-
-// body {
-//     background-color: $primary;
-// }
-
 .navbar .nav-link {
     font-size: 14px;
     text-transform: uppercase;
@@ -62,3 +55,29 @@ $primary-overlay: rgba(50,146,166, 0.8);
         color: #fff;
     }
 }
+
+#main-footer {
+    background: #000;
+    color: #fff;
+}
+
+// About Page
+
+#page-header {
+    height: 200px;
+    background-image: url(../img/image1.jpg);
+    background-position: 0 -360px;
+    background-attachment: fixed;
+    color: #fff;
+    border-bottom: 1px solid #eee;
+    padding-top: 50px;
+}
+
+.about-img {
+    margin-top: -50px;
+}
+
+
+
+
+
