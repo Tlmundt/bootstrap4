@@ -1,0 +1,5 @@
+node_modules/
+.nova
+dist/
+bootstrap-scss/
+src/.DS_Store

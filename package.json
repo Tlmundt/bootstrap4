@@ -1,0 +1,36 @@
+{
+  "name": "project4-blogen",
+  "version": "1.0.0",
+  "description": "Bootstrap 4 Project 3: Blogen with SCSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trevormundt/bootstrap4.git"
+  },
+  "keywords": [
+    "Webpack",
+    "SASS",
+    "Bootstrap v4.5",
+    "Project #4"
+  ],
+  "author": "Trevor Mundt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trevormundt/bootstrap4/issues"
+  },
+  "homepage": "https://github.com/trevormundt/bootstrap4#readme",
+  "devDependencies": {
+    "css-loader": "^6.10.0",
+    "html-loader": "^5.0.0",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.8.0",
+    "sass": "^1.70.0",
+    "sass-loader": "^14.1.0",
+    "webpack": "^5.90.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
