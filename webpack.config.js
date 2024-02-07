@@ -45,22 +45,22 @@ module.exports = {
             filename: 'index.html',
             template: 'src/index.html'
         }),
-        // new HtmlWebpackPlugin({
-        //     filename: 'about.html',
-        //     template: 'src/about.html'
-        // }),
-        // new HtmlWebpackPlugin({
-        //     filename: 'services.html',
-        //     template: 'src/services.html'
-        // }),
-        // new HtmlWebpackPlugin({
-        //     filename: 'blog.html',
-        //     template: 'src/blog.html'
-        // }),
-        // new HtmlWebpackPlugin({
-        //     filename: 'contact.html',
-        //     template: 'src/contact.html'
-        // }),
+        new HtmlWebpackPlugin({
+            filename: 'posts.html',
+            template: 'src/posts.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'categories.html',
+            template: 'src/categories.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'users.html',
+            template: 'src/users.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'details.html',
+            template: 'src/details.html'
+        }),
         new MiniCssExtractPlugin({
             filename: 'css/[name].css',
         })
