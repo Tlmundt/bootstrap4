@@ -1,0 +1,37 @@
+{
+  "name": "project5-portfoliogrid",
+  "version": "1.0.0",
+  "description": "Bootstrap 4 Project 5: Portfoliogrid",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "webpack serve",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trevormundt/bootstrap4.git"
+  },
+  "keywords": [
+    "Webpack",
+    "HTML5",
+    "CSS3",
+    "Bootstrap v4.5",
+    "Project #5"
+  ],
+  "author": "Trevor Mundt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trevormundt/bootstrap4/issues"
+  },
+  "homepage": "https://github.com/trevormundt/bootstrap4#readme",
+  "devDependencies": {
+    "css-loader": "^6.10.0",
+    "html-loader": "^5.0.0",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.8.0",
+    "webpack": "^5.90.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
